@@ -1,0 +1,27 @@
+<div class="edit">
+  {{#if editQuestionForm}}
+    <h4>Edit {{question.author}}'s {{question.text}}</h4>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="text">Question Title</label>
+          {{input value=text id="text" placeholder=question.text}}
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          {{input value=author id="author" placeholder=question.author}}
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Additional Notes</label>
+          {{textarea value=notes id="notes" cols="30" rows="7" placeholder=question.notes}}
+        </div>
+
+        <button {{action 'edit' question}}>Save</button>
+      </form>
+    </div>
+  {{else}}
+    <button {{action 'editQuestionForm'}}>Edit</button>
+  {{/if}}
+</div>

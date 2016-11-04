@@ -1,0 +1,19 @@
+{ "questions": [{
+    "text": "Who is the National Guard Recruiter for the Beaverton area?",
+    "author": "Joe Snuffy",
+    "notes": "Im 18 and about to graduate high school, I want to be a Combat Engineer!"
+  }, {
+    "text": "Will my enlistment bonus be recouped if I fail a PT test?",
+    "author": "PVT Fatbody",
+    "notes": "I'm running and working out but fear I will not pass my next PT test, currently scoring a 165 combined"
+  }, {
+    "text": "What is the new State CSM, CSM Richmond, like?",
+    "author": "SFC McCurious",
+    "notes": "I work in JFHQ and want to know what he is like to work with."
+  }],
+
+  "answers": [{
+    "text": "SFC Cox is the Recuriter in your area.",
+    "author": "LT KnowItAll"
+  }]
+}

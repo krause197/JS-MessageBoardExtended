@@ -1,0 +1,11 @@
+<h1> Welcome to the Black on Foxtrots Message Board</h1>
+
+<p> A site for all your questions regarding the Oregon Army National Guard</p>
+
+<ul>
+  {{#each model.questions as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ul>
+
+{{new-question saveQuestion2="saveQuestion3"}}

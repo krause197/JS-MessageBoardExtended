@@ -1,0 +1,103 @@
+$lt-backgrounds : rgba(45, 112, 40, .9);
+$md-backgrounds : rgba(112, 94, 40, .6);
+$mddk-backgrounds : rgba(204, 188, 134, .9);
+
+header {
+
+  .jumbotron {
+    position: relative;
+    background:#000 url(http://bjstlh.com/data/wallpapers/19/WDF_674859.jpg) 100% 100% no-repeat;
+    width: 1500px;
+    height: 250px;
+    background-size: auto;
+    overflow: hidden;
+    color: blue;
+
+    h1 {
+      font-family: "Allerta Stencil";
+      font-size:80px;
+      font-style: normal;
+      font-variant: normal;
+      line-height: 26.4px;
+      color: white;
+    }
+  }
+}
+
+img {
+  position: relative;
+  height: 500px;
+  width: 750px;
+}
+
+body {
+  font-family: "Allerta Stencil";
+  font-size:24px;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 26.4px;
+  color: black;
+  background-color: $lt-backgrounds;
+  a:link,
+  a:visited,
+  a:active {
+    color: white;
+  }
+
+  .well {
+    background-color: $mddk-backgrounds;
+  }
+
+
+  .newQuestion {
+    background-color: $md-backgrounds;
+    border-radius: 5px;
+    padding: 5px 0px;
+    margin: 10px 0px;
+  }
+
+  .edit {
+    background-color: $md-backgrounds;
+    border-radius: 5px;
+    padding: 5px 0px;
+    margin: 10px 0px;
+  }
+  .questionTile {
+    background-color: $md-backgrounds;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    .glyphicon-pencil {
+      padding-left: 5px;
+    }
+  }
+
+  .questionDetail {
+    background-color: $md-backgrounds;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    .glyphicon-pencil {
+      padding-left: 5px;
+    }
+  }
+
+  .newAnswerForm {
+    background-color: $md-backgrounds;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 5px 0;
+  }
+  .answerTile {
+    background-color: $md-backgrounds;
+    border-radius: 10px;
+    padding: 5%;
+  }
+
+  .answer-tiles {
+    background-color: $mddk-backgrounds;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 25px;
+    }
+}

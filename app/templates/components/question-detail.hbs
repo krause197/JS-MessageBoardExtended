@@ -1,0 +1,21 @@
+<div class="questionDetail">
+  <h2>{{question.text}}</h2>
+  <h4>Asked By {{question.author}}</h4>
+  <p>{{question.notes}}</p>
+  <p>{{question.tags}}</p>
+  <div class="edit">
+    {{edit-question question=question edit="edit"}}
+  </div>
+  <button {{action 'delete' question}}>Delete Question</button>
+</div>
+
+<div class="answer">
+  <h2> Answers to this Question </h2>
+  <ul>
+    {{#each question.answers as |answer|}}
+      {{answer-tile answer=answer}}
+      {{edit-answer answer=answer editAnswer="editAnswer"}}
+      <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
+    {{/each}}
+  </ul>
+</div>
