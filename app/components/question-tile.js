@@ -12,6 +12,11 @@ export default Ember.Component.extend({
     addFavorite(question) {
       this.get('favoriteList').add(question);
       this.set('favoriteClicked', true);
+    },
+
+    removeFavorite(favorite) {
+      this.get('favoriteList').remove(favorite);
+      this.set('favoriteClicked', false);
     }
   }
 });

@@ -8,6 +8,6 @@ export default Ember.Service.extend({
   },
 
   remove(question) {
-    this.get('favorite').removeObject(quesiton);
+    this.get('favorites').removeObject(question);
   }
 });

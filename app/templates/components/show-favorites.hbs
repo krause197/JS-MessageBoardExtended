@@ -1,6 +1,6 @@
 <div class="favorites">
-  <h2>Your list of Warm and Fuzzies</h2>
   {{#each favoriteList.favorites as |favorite|}}
+    <h2>Your list of Warm and Fuzzies</h2>
     <div class="col-sm-3">
       {{#link-to 'question' favorite.id}}<p>{{favorite.text}}: {{favorite.author}}</p>{{/link-to}}
       <button class="btn btn-xs btn-danger" {{action 'removeFavorite' favorite}}><span class="glyphicon glyphicon-trash"></span>Remove</button>

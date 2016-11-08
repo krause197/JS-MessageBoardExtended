@@ -4,8 +4,10 @@ export default Ember.Component.extend({
   favoriteList: Ember.inject.service(),
 
   actions: {
-    removeFavorite(question) {
-      this.get('favoriteList').remove(question);
+    removeFavorite(favorite) {
+      this.get('favoriteList').remove(favorite);
+      this.set('favoriteClicked', false);
     }
+
   }
 });
