@@ -15,6 +15,9 @@ export default Ember.Component.extend({
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion2', params);
+      this.set('text', '');
+      this.set('author', '');
+      this.set('notes', '');
     }
   }
 });
