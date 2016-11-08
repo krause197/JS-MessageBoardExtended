@@ -1,7 +1,7 @@
 <div class="favorites">
   <h2>Your Favorites</h2>
   {{#each favoriteList.favorite as |favorite|}}
-    <p>{{favorite.text}}: {{favorite.author}}</p>
+    {{#link-to 'question' favorite.id}}<p>{{favorite.text}}: {{favorite.author}}</p>{{/link-to}}
     <button class="btn btn-xs btn-danger" {{action 'removeFavorite' favorite}}><span class="glyphicon glyphicon-trash"></span>Remove</button>
   {{/each}}
 </div>
