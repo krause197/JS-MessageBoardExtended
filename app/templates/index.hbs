@@ -2,12 +2,19 @@
 
 <p> A site for all your questions regarding the Oregon Army National Guard</p>
 
+<h3>CURRENT FAVORITES</h3>
+
+{{show-favorites}}
+
+
+
+<h3>ALL QUESTIONS</h3>
 <ul>
   {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
 
-{{show-favorites}}
+
 
 {{new-question saveQuestion2="saveQuestion3"}}
