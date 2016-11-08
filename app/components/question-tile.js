@@ -6,10 +6,12 @@ export default Ember.Component.extend({
   }),
 
   favoriteList: Ember.inject.service(),
+  favoriteClicked: false,
 
   actions: {
     addFavorite(question) {
       this.get('favoriteList').add(question);
+      this.set('favoriteClicked', true);
     }
   }
 });
