@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'js-message-board',
+    modulePrefix: 'js-message-board-extended',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -18,10 +18,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyCQzN5bRuKclCWyr6JO8xKryxYTezsoldE",
-      authDomain: "js-messageboard.firebaseapp.com",
-      databaseURL: "https://js-messageboard.firebaseio.com",
-      storageBucket: 'js-messageboard.appspot.com',
+      apiKey: "AIzaSyBOlrthKj8K8_WSNeuocY9CfswUCtxjUw0",
+      authDomain: "js-messageboardextended.firebaseapp.com",
+      databaseURL: "https://js-messageboardextended.firebaseio.com",
+      storageBucket: 'js-messageboardextended.appspot.com',
     },
 
     APP: {

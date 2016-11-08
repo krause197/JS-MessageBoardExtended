@@ -1,7 +1,7 @@
 {
-  "name": "js-message-board",
+  "name": "js-message-board-extended",
   "version": "0.0.0",
-  "description": "Small description for js-message-board goes here",
+  "description": "js-message-board-extended",
   "private": true,
   "directories": {
     "doc": "doc",
