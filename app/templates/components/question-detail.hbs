@@ -11,11 +11,11 @@
 
 <div class="answer">
   <h2> Answers to this Question </h2>
+  {{question-noanswer question}}
   <ul>
     {{#each question.answers as |answer|}}
       {{answer-tile answer=answer}}
       {{edit-answer answer=answer editAnswer="editAnswer"}}
-      {{question-noanswer question}}
       <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
     {{/each}}
   </ul>
